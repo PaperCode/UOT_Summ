@@ -1,0 +1,122 @@
+Mode: continue previous train
+USE COPY MECHANISM
+USE COVERAGE MECHANISM
+USE AVG NLL as LOSS
+USE LEARNABLE W2V EMBEDDING
+USE BI-DIRECTIONAL RNN
+RNN TYPE: lstm
+hidden_size_ot_extractor: 128
+dim_section_ext: 256
+max_len_one_section_src: 600
+max_len_one_sentence_abst: 40
+recombined_max_len_abst: 140
+max_src_sections_nums: 20
+max_abst_sentences_nums: 20
+lr_4_matcher: 1e-05
+epsilon: 0.006
+tau_sinkhorn: 0.03
+bucket_size_4_average: 80
+min_len_predict_one_sec: 10
+max_len_predict_one_sec: 200
+idx_gpu: 2
+norm_clip: 2
+dim_x: 128
+dim_y: 128
+len_x: 401
+len_y: 101
+num_x: 1
+num_y: 1
+hidden_size: 256
+batch_size: 9
+testing_batch_size: 5
+max_byte_predict: None
+testing_print_size: 500
+lr: 0.15
+beam_size: 4
+max_epoch: 50
+print_time: 5
+save_epoch: 1
+dict_size: 50003
+pad_token_idx: 0
+loading train set...
+num_files =  195274 , num_batches =  21698
+compiling model ...
+Have been trained for 127 epochs
+loading existed model: cnndm.s2s.lstm.gpu2.epoch127.4
+start training model 
+max epoch: 50
+4340 / 21698 batches have been processed, average cost until now: cost = 2.333148064481498 , cost_c = 0.9999999952069076 , cost 4 matcher = 1.109584078354083 , time: 15378.12969326973
+save model... 
+finished
+8680 / 21698 batches have been processed, average cost until now: cost = 2.342313060329257 , cost_c = 0.9999999954129144 , cost 4 matcher = 1.1189123739535634 , time: 30527.39687371254
+save model... 
+finished
+13020 / 21698 batches have been processed, average cost until now: cost = 2.348412176000724 , cost_c = 0.9999999953305116 , cost 4 matcher = 1.1250164283654107 , time: 45673.69987797737
+save model... 
+finished
+17360 / 21698 batches have been processed, average cost until now: cost = 2.3534728374624034 , cost_c = 0.9999999953682797 , cost 4 matcher = 1.130589857880318 , time: 60793.54765748978
+save model... 
+finished
+in this epoch, total average cost = 2.3571194370435657 , cost_c = 0.9999999952172334 , cost 4 matcher = 1.128722293125999 , time: 75794.03481268883
+save model... 
+finished
+4340 / 21698 batches have been processed, average cost until now: cost = 2.334222592626299 , cost_c = 0.9999999953030442 , cost 4 matcher = 1.169806299894224 , time: 14946.241672992706
+save model... 
+finished
+8680 / 21698 batches have been processed, average cost until now: cost = 2.343059926909236 , cost_c = 0.9999999952549758 , cost 4 matcher = 1.145874768282686 , time: 29906.46221256256
+save model... 
+finished
+13020 / 21698 batches have been processed, average cost until now: cost = 2.3461972253846315 , cost_c = 0.9999999950741476 , cost 4 matcher = 1.130033345967989 , time: 44856.54464554787
+save model... 
+finished
+17360 / 21698 batches have been processed, average cost until now: cost = 2.3502184375090533 , cost_c = 0.9999999948326619 , cost 4 matcher = 1.121961597998708 , time: 59788.239810466766
+save model... 
+finished
+in this epoch, total average cost = 2.3545876284725145 , cost_c = 0.9999999950139452 , cost 4 matcher = 1.1290652408915005 , time: 74683.1410689354
+save model... 
+finished
+4340 / 21698 batches have been processed, average cost until now: cost = 2.3328852507375903 , cost_c = 0.999999995371713 , cost 4 matcher = 1.1106723109903973 , time: 14926.003637552261
+save model... 
+finished
+8680 / 21698 batches have been processed, average cost until now: cost = 2.3390088693612183 , cost_c = 0.999999994918498 , cost 4 matcher = 1.1144381584539529 , time: 29794.018795728683
+save model... 
+finished
+13020 / 21698 batches have been processed, average cost until now: cost = 2.3423566974070034 , cost_c = 0.9999999951016152 , cost 4 matcher = 1.1152823858066088 , time: 44713.46424102783
+save model... 
+finished
+17360 / 21698 batches have been processed, average cost until now: cost = 2.348440287451041 , cost_c = 0.9999999951382387 , cost 4 matcher = 1.132480777458455 , time: 59634.894406080246
+save model... 
+finished
+in this epoch, total average cost = 2.3533693959252893 , cost_c = 0.9999999949919681 , cost 4 matcher = 1.128490884669306 , time: 74517.0084142685
+save model... 
+finished
+4340 / 21698 batches have been processed, average cost until now: cost = 2.3346743563078514 , cost_c = 0.9999999946300885 , cost 4 matcher = 1.1504482405835308 , time: 14848.934430837631
+save model... 
+finished
+8680 / 21698 batches have been processed, average cost until now: cost = 2.3410883451661757 , cost_c = 0.9999999947056243 , cost 4 matcher = 1.124095045303076 , time: 29711.82217478752
+save model... 
+finished
+13020 / 21698 batches have been processed, average cost until now: cost = 2.3454795911381687 , cost_c = 0.9999999948864525 , cost 4 matcher = 1.1220334468326445 , time: 44510.28417682648
+save model... 
+finished
+17360 / 21698 batches have been processed, average cost until now: cost = 2.34836908648915 , cost_c = 0.9999999949047642 , cost 4 matcher = 1.1274984021177559 , time: 59263.567806720734
+save model... 
+finished
+in this epoch, total average cost = 2.351432892772609 , cost_c = 0.9999999949590025 , cost 4 matcher = 1.1257216891847064 , time: 74043.46989274025
+save model... 
+finished
+4340 / 21698 batches have been processed, average cost until now: cost = 2.330214791501173 , cost_c = 0.9999999946850237 , cost 4 matcher = 1.1495334293126784 , time: 14769.624727249146
+save model... 
+finished
+8680 / 21698 batches have been processed, average cost until now: cost = 2.335834859332181 , cost_c = 0.999999994856696 , cost 4 matcher = 1.1336290488354346 , time: 29491.845837831497
+save model... 
+finished
+13020 / 21698 batches have been processed, average cost until now: cost = 2.3405924729762537 , cost_c = 0.9999999950054786 , cost 4 matcher = 1.1325288939688887 , time: 44357.38469529152
+save model... 
+finished
+17360 / 21698 batches have been processed, average cost until now: cost = 2.345275196453668 , cost_c = 0.999999995048969 , cost 4 matcher = 1.1289933950035116 , time: 59104.414145469666
+save model... 
+finished
+in this epoch, total average cost = 2.3493172186126565 , cost_c = 0.999999994989221 , cost 4 matcher = 1.126141528419928 , time: 73741.150629282
+save model... 
+finished
